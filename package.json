@@ -1,0 +1,36 @@
+{
+  "name": "colombia_diego_guevara",
+  "version": "1.0.0",
+  "description": "Landing page for Colombia Diego Guevara with Vite, PostCSS and PurgeCSS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "purgecss": "purgecss --config purgecss.config.js",
+    "build:prod": "npm run build && npm run purgecss",
+    "preview": "vite preview",
+    "serve": "vite preview",
+    "clean": "rm -rf dist",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write --ignore-unknown ."
+  },
+  "keywords": [
+    "landing",
+    "vite",
+    "postcss",
+    "purgecss",
+    "colombia"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^3.6.2",
+    "purgecss": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}
